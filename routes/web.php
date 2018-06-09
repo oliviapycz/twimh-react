@@ -11,6 +11,15 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', ['as' => 'home', function () {
+    return view('home');
+}]);
+
+Route::get('/login', ['as' => 'login', 'middleware' => 'ip', function () {
+    return view('login');
+}]);
+
+Route::get('/register', ['as' => 'register', function () {
+    return view('register');
+}]);
+
