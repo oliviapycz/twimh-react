@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import ReactDOM from "react-dom";
+import Layout from "../hoc/Layout/Layout";
 
 /* An example React component */
 class Main extends Component {
@@ -45,10 +46,11 @@ class Main extends Component {
 
   render() {
     return (
-      <div>
-        <h3>All Articles</h3>
-        {this.renderArticles()}
-      </div>
+      <Layout />
+      // <div>
+      //   <h3>All Articles</h3>
+      //   {this.renderArticles()}
+      // </div>
     );
   }
 }

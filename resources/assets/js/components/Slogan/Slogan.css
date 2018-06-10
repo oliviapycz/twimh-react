@@ -1,0 +1,37 @@
+.Slogan {
+  min-height: calc(100vh - 56px);
+  background-image: url("../../../images/myanmar.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  text-align: center;
+  color: white;
+  font-size: 32px;
+}
+h2 {
+  margin: inherit;
+}
+.from-left {
+  line-height: 50vh;
+  animation-name: right;
+  animation-duration: 2s;
+}
+@keyframes left {
+  from {
+    right: 1500px;
+  }
+  to {
+    right: 0;
+  }
+}
+.from-right {
+  animation-name: left;
+  animation-duration: 2s;
+}
+@keyframes right {
+  from {
+    left: 1500px;
+  }
+  to {
+    left: 0;
+  }
+}
